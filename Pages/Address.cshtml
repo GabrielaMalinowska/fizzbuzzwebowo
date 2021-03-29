@@ -1,0 +1,22 @@
+﻿@page
+@model fizzbuzzwebowo.Pages.Shared.AdressModel
+@{
+    ViewData["Title"] = "Lista";
+}
+<p>Dane w zapisane w sesji</p>
+@if (Model.Address != null)
+{
+    <p>
+        @Html.DisplayNameFor(model => Model.Address.Number):
+        @Model.Address.Number
+    </p>
+    <p>
+        @Html.DisplayNameFor(model => Model.Address.Data):
+        @Model.Address.Data
+    </p>
+    <p>
+        @Html.DisplayNameFor(model => Model.Address.Ocena):
+        @Model.Address.Ocena
+    </p>
+
+}
